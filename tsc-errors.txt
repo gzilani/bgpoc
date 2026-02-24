@@ -1,0 +1,7 @@
+src/components/Layout.tsx(3,15): error TS2307: Cannot find module './Layout.module.css' or its corresponding type declarations.
+src/pages/HomePage.tsx(5,15): error TS2307: Cannot find module './HomePage.module.css' or its corresponding type declarations.
+src/pages/LoginPage.tsx(4,15): error TS2307: Cannot find module './LoginPage.module.css' or its corresponding type declarations.
+src/pages/PayslipsPage.tsx(2,15): error TS2307: Cannot find module './PayslipsPage.module.css' or its corresponding type declarations.
+src/pages/RequestsPage.tsx(2,15): error TS2307: Cannot find module './RequestsPage.module.css' or its corresponding type declarations.
+src/pages/SafetyPage.tsx(2,15): error TS2307: Cannot find module './SafetyPage.module.css' or its corresponding type declarations.
+src/pages/ShiftsPage.tsx(1,15): error TS2307: Cannot find module './ShiftsPage.module.css' or its corresponding type declarations.

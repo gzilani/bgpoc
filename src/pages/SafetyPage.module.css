@@ -1,0 +1,256 @@
+.page {
+    background: linear-gradient(180deg, #0f0f12, #141420);
+    min-height: 100%;
+}
+
+.pageTitle {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 16px 20px;
+}
+
+/* Horizontal chip scroller */
+.typeScroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 0 20px 16px;
+    scrollbar-width: none;
+}
+
+.typeScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.typeChip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    background: var(--bg-card);
+    border-radius: var(--radius-full);
+    padding: 8px 14px;
+    border: 1px solid var(--border-subtle);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+}
+
+.typeChipActive {
+    border-color: var(--primary);
+    background: var(--primary-alpha15);
+}
+
+.typeChipLabel {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.typeChipLabelActive {
+    color: var(--primary);
+}
+
+/* Progress */
+.progressCard {
+    margin: 0 20px 16px;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.progressHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressTitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.progressCount {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.progressBarBg {
+    height: 6px;
+    background: var(--bg-surface);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progressBarFill {
+    height: 6px;
+    border-radius: 3px;
+    min-width: 6px;
+    background: linear-gradient(90deg, var(--primary), var(--success));
+    transition: width 0.3s ease;
+}
+
+/* Checklist */
+.checklistContainer {
+    margin: 0 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkItem {
+    display: flex;
+    gap: 12px;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 14px;
+    border: 1px solid var(--border-subtle);
+    align-items: flex-start;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.checkItemDone {
+    border-color: rgba(34, 197, 94, 0.4);
+    background: rgba(34, 197, 94, 0.04);
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid var(--border-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+    cursor: pointer;
+    background: none;
+    transition: all 0.15s;
+}
+
+.checkboxChecked {
+    background: var(--success);
+    border-color: var(--success);
+}
+
+.checkmark {
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.checkContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkLabel {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.checkLabelDone {
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.tempInput {
+    background: var(--bg-surface);
+    border-radius: var(--radius-sm);
+    padding: 8px;
+    font-size: 13px;
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+    outline: none;
+    width: 100%;
+}
+
+.tempInput:focus {
+    border-color: var(--primary);
+}
+
+/* Notes */
+.notesSection {
+    margin: 0 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    display: block;
+}
+
+.textarea {
+    background: var(--bg-card);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    padding: 12px;
+    font-size: 14px;
+    color: var(--text-primary);
+    font-family: var(--font);
+    outline: none;
+    width: 100%;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.textarea:focus {
+    border-color: var(--primary);
+}
+
+/* Submit */
+.successBox {
+    margin: 0 20px;
+    background: var(--success-alpha15);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+}
+
+.successText {
+    color: var(--success);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.submitBtn {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.submitBtn:active {
+    opacity: 0.85;
+}
+
+.submitBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
